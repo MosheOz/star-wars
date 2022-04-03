@@ -1,0 +1,20 @@
+<div *ngIf="sumVehicle$ | async as sumVehicle" class="sumVehicle-main">
+  <table class="sumVehicle">
+    <tr>
+      <th>Vehicle name with the largest sum</th>
+      <td>{{ sumVehicle[0].name }}</td>
+    </tr>
+    <tr>
+      <th>Related home planets and their respective population</th>
+      <td>{{ sumVehicle[0].planets }} , {{ sumVehicle[0].planetsData }}</td>
+    </tr>
+    <tr>
+      <th>Related pilot names</th>
+      <td>
+        {{ sumVehicle[0].pilotName }}
+      </td>
+    </tr>
+  </table>
+
+  <app-graph [graphData]="sumVehicle"></app-graph>
+</div>

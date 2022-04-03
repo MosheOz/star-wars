@@ -1,0 +1,19 @@
+<table class="bars-table" *ngIf="graphData">
+  <tbody>
+    <tr class="bars">
+      <td *ngFor="let s of graphData">
+        {{ s.name }}
+        <div
+          [ngStyle]="{
+            height: getBarPercentage(s.planetsData, graphData[0].planetsData),
+            background: 'red'
+          }"
+        ></div>
+        <div style="margin-top: 25px; text-align: center">
+          {{ s.planetsData }}
+        </div>
+      </td>
+    </tr>
+    <tr class="bars"></tr>
+  </tbody>
+</table>

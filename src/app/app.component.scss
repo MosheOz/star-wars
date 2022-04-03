@@ -1,0 +1,34 @@
+.sumVehicle {
+  font-family: Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  max-width: 800px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.sumVehicle td,
+.sumVehicle th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+.sumVehicle tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+.sumVehicle tr:hover {
+  background-color: #ddd;
+}
+
+.sumVehicle th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #04aa6d;
+  color: white;
+}
+
+.sumVehicle-main {
+  display: flex;
+  flex-direction: column;
+}
